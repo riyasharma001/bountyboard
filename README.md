@@ -6,10 +6,8 @@ Post tasks with XLM rewards locked in escrow. Hunters claim and submit their wor
 
 | | |
 |---|---|
-| **Frontend** | `https://bountyboard.vercel.app` |
-| **GitHub** | `https://github.com/YOUR_USERNAME/bountyboard` |
-| **Contract** | `https://stellar.expert/explorer/testnet/contract/CONTRACT_ID` |
-| **Proof TX** | `https://stellar.expert/explorer/testnet/tx/TX_HASH` |
+| **Frontend** | `https://bountyboard-nine.vercel.app` |
+| **Contract** | `https://stellar.expert/explorer/testnet/contract/CDCWS7RXOEX4XMENW4U4IKYCLVDRBSIN4IXVKNNOQ3X3P43GQCTOKUW5` |
 
 ## Lifecycle
 
