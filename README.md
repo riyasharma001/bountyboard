@@ -6,8 +6,8 @@ Post tasks with XLM rewards locked in escrow. Hunters claim and submit their wor
 
 | | |
 |---|---|
-| **Frontend** | `https://bountyboard-nine.vercel.app` |
-| **Contract** | `https://stellar.expert/explorer/testnet/contract/CDCWS7RXOEX4XMENW4U4IKYCLVDRBSIN4IXVKNNOQ3X3P43GQCTOKUW5` |
+| **Frontend** | `https://bountyboard-app.vercel.app` |
+| **Contract** | `https://stellar.expert/explorer/testnet/contract/CBXQRMLZWQOSC7YP5KBYMLWNPVN55Y3IYN7OI7YTV5EXM4P66P7AYTEN` |
 
 ## Lifecycle
 
@@ -17,6 +17,16 @@ Open → [hunter claims] → InReview → [poster approves] → Paid
 Open → [poster cancels] → Cancelled (refunded)
 ```
 
+## Why This Project Matters
+
+This project turns a familiar real-world workflow into a verifiable on-chain primitive on Stellar: transparent state transitions, user-authenticated actions, and deterministic outcomes.
+
+## Architecture
+
+- **Smart Contract Layer**: Soroban contract enforces business rules, authorization, and state transitions.
+- **Client Layer**: React + Vite frontend handles wallet UX, transaction composition, and real-time status views.
+- **Wallet/Auth Layer**: Freighter signs every state-changing action so operations are attributable and non-repudiable.
+- **Infra Layer**: Stellar Testnet + Soroban RPC for execution; Vercel for frontend hosting.
 ## Contract Functions
 
 ```rust
@@ -46,3 +56,6 @@ count() -> u64
 chmod +x scripts/deploy.sh && ./scripts/deploy.sh
 cd frontend && npm install && npm run dev
 ```
+
+
+
